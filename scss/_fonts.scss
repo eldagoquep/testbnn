@@ -79,6 +79,15 @@ h1 {
     text-transform: uppercase;
 }
 
+@media only screen and (max-width: 960px) {
+    h1 {
+        font-size: 6rem;
+        color: $azul-oscuro;
+        margin-top: 7vh;
+        text-transform: uppercase;
+    }
+}
+
 h2 {
     font-size: 2.4rem;
     text-transform: uppercase;
