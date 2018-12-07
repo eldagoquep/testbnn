@@ -1,0 +1,15 @@
+.carousel-indicators {
+
+    li {
+        width: 15px;
+        height: 15px;
+        margin-right: 7px;
+        margin-left: 7px;
+        @extend %borde-redondo;
+        background-color: $cblanco;
+    }
+    
+    .active {
+        background-color: $cresaltado;
+    }
+}

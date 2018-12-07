@@ -1,0 +1,37 @@
+// boton para leer mas
+article .leer,
+.btn-dark {
+    margin-top: $alto-chi;
+    margin-bottom: $alto-chi;
+    border-radius: 0;
+    padding: 0.375rem 15%;
+}
+
+//formulario de contacto
+input.form-control,
+textarea.form-control {
+    border-radius: 0;
+    border: none;
+    color: $azul-oscuro;
+    background-color: #3B465C;
+    font-weight: bold;
+    
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(59, 70, 92, 0.25);
+        background-color: #7c8caa;
+    }
+}
+
+.btn-dark {
+    background-color: #223148;
+    border: none;
+    font-weight: bold;
+
+    &:hover {
+        background-color: $azul-oscuro;
+    }
+}
+
+form .invalid-feedback {
+    color: #fff;
+}

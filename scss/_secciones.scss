@@ -1,0 +1,220 @@
+body {
+    background-color: $cfondo;
+}
+
+// estilo de menu fixed
+.menu-top {
+    nav.navbar-expand-lg {
+        @extend %sombras-compartidas;
+        background-color: $cfondo;
+        height: $alto-cmed;
+
+        .short {
+            display: none;
+        }
+
+        .expand {
+            display: block;
+        }
+
+        .nav-link {
+            padding-bottom: $alto-chi;
+            padding-top: $alto-chi;
+            padding-left: 18px;
+            padding-right: 18px;
+
+            &:hover {
+                padding-top: $alto-chi - 0.2;
+            }
+        }
+    }
+
+    .navbar {
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .menu-top nav.navbar-expand-lg {
+        min-height: $alto-cmed;
+        height: auto;
+
+        .navbar-toggler-icon img {
+            max-height: 34px;
+        }
+
+        .nav-link:hover {
+            border-top: none;
+            border-bottom: 2px solid $cresaltado;
+        }
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    .menu-top nav.navbar-expand-lg {
+
+        .short {
+            display: block;
+        }
+
+        .expand {
+            display: none;
+        }
+    }
+}
+
+// estilo de secciones
+#home {
+    position: absolute;
+    top: 0;
+}
+
+section {
+    min-height: $alto-max;
+
+    //Carrusel
+    .carousel {
+        max-height: $alto-max;
+        margin-top: $alto-cmed;
+
+        img {
+            max-height: $alto-max;
+        }
+    }
+
+    &#mission {
+        background-image: url('img/mision.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    &#mission,
+    .relleno {
+        padding-top: $alto-medio;
+    }
+
+    .relleno {
+        padding-bottom: $alto-cmed;
+    }
+
+    &#video {
+        background-image: url('img/video.jpg');
+        background-position: right;
+        min-height: $video;
+
+        .enlace {
+            height: $video;
+            background-color: $cfondo;
+        }
+
+        .circulo {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+            width: 80px;
+            height: 80px;
+            @extend %sombras-compartidas;
+            @extend %borde-redondo;
+
+            .triangulo {
+                margin: 16px;
+                width: 0;
+                height: 0;
+                border-left: 20px solid $cblanco;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+            }
+        }
+
+        a {
+            cursor: pointer;
+
+            &:hover .triangulo {
+                border-left: 20px solid $cresaltado;
+            }
+        }
+
+        //modal
+        .modal-content {
+            background-color: $cfondo;
+        }
+
+        iframe {
+            width: 100%;
+        }
+    }
+
+    &#visual {
+        background-image: url('img/visual.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+
+// bloques de enlaces
+.block-trans {
+    @extend %sombras-compartidas;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: $alto-xchi 10% $alto-chi;
+    margin: $alto-xchi 5% $alto-cmed;
+
+    img {
+        position: absolute;
+        margin-top: -$alto-chi;
+    }
+}
+
+//listas
+#visual li {
+    margin-bottom: $alto-chi;
+}
+
+.number {
+    @extend %borde-redondo;
+    border: solid 1px #667383;
+    float: left;
+    width: 50px;
+    padding: 5px 17px;
+    margin-right: 5%;
+}
+
+//grupo de imagenes
+.imagenes {
+    margin-top: $alto-cmed;
+}
+
+img[class^="img-"] {
+    position: absolute;
+}
+
+.img-3 {
+    width: 60%;
+    margin-top: $alto-chi;
+    margin-left: 15%;
+}
+
+.img-2 {
+    width: 45%;
+    margin-top: $alto-cmed * 2;
+    margin-left: 45%;
+}
+
+.img-1 {
+    width: 30%;
+    margin-top: $alto-medio * 3;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 960px) {
+    .imagenes {
+        height: $alto-max;
+    }
+}
+
+//Contacto
+footer {
+    min-height: $alto-max;
+}

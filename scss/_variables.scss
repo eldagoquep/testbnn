@@ -1,0 +1,44 @@
+//fuentes 
+$roboto: 'Roboto';
+$oswald: 'Oswald';
+
+//colores
+$cfondo: #1D3D57;
+$cresaltado: #01D4F1;
+$cblanco: #FFF;
+$ctexto: #767D85;
+$azul-oscuro: #1C283E;
+
+//alto de secciones
+$alto-max: 90vh;
+$alto-medio: 16vh;
+$alto-cmed: 10vh;
+$alto-chi: 3.4vh;
+$alto-xchi: 1.3vh;
+
+//video
+$video: 347px;
+
+//sombras
+%sombras-compartidas {
+  box-shadow: 0 0px 30px #132639;
+}
+
+//bordes redondos
+%borde-redondo {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+    
+//limpiador
+.limpia {
+    clear: both;
+}
+
+//estandares
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
